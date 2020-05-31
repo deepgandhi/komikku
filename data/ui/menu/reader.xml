@@ -4,6 +4,11 @@
     <menu id="menu-reader">
         <section>
             <submenu>
+                <attribute name="label">Take screenshot</attribute>
+                <attribute name="target">app.reader.take_screenshot</attribute>                
+                <attribute name="target">take-screenshot</attribute>
+            </submenu>
+            <submenu>
                 <attribute name="label" translatable="yes">Reading direction</attribute>
                 <section>
                     <attribute name="id">reading-direction-section</attribute>

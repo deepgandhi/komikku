@@ -64,6 +64,10 @@ class Reader:
         return self.window.get_size()
 
     def add_actions(self):
+        # Screenshot
+        self.take_screenshot=Gio.SimpleAction.new('reader.take_screenshot',None)
+        self.take_screenshot.connect('activate',self.screenshot)
+
         # Reading direction
         self.reading_direction_action = Gio.SimpleAction.new_stateful(
             'reader.reading-direction', GLib.VariantType.new('s'), GLib.Variant('s', 'right-to-left'))
@@ -206,3 +210,6 @@ class Reader:
         if chapter.manga.name in subtitle:
             subtitle = subtitle.replace(chapter.manga.name, '').strip()
         self.subtitle_label.set_text(subtitle)
+
+   def screenshot(self):
+        print(self.pager.current_page)
