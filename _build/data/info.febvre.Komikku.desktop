@@ -1,0 +1,24 @@
+[Desktop Entry]
+Name[fr]=Komikku
+Name[nl]=Komikku
+Name[pt_BR]=Komikku
+Name[ru]=Komikku
+Name=Komikku
+Comment[fr]=Un lecteur de manga en ligne / hors ligne
+Comment[nl]=Een online-/offline-mangalezer
+Comment[pt_BR]=Um leitor de mangá online/offline
+Comment[ru]=Онлайн/оффлайн читалка манги
+Comment=An online/offline manga reader
+Exec=/usr/local/bin/komikku %U
+# Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+Icon=info.febvre.Komikku
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Office;Viewer;GTK;GNOME;
+# Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+Keywords[fr]=manga;lecteur;visionneuse;comic;webtoon;scan;hors ligne;
+Keywords[nl]=manga;lezer;weergave;strip;webtoon;scan;offline;
+Keywords[pt_BR]=mangá;leitor;visualizador;comic;webtoon;scan;offline;
+Keywords[ru]=манга;читалка;просмотрщик;комикс;веб-комикс;скан;оффлайн
+Keywords=manga;reader;viewer;comic;webtoon;scan;offline;

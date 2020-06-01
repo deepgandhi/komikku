@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>info.febvre.Komikku</id>
+  <project_license>GPL-3.0</project_license>
+  <metadata_license>CC0-1.0</metadata_license>
+  <content_rating type="oars-1.1"/>
+  <name>Komikku</name>
+  <name xml:lang="ru">Komikku</name>
+  <name xml:lang="pt_BR">Komikku</name>
+  <name xml:lang="nl">Komikku</name>
+  <name xml:lang="fr">Komikku</name>
+  <summary>An online/offline manga reader for GNOME</summary>
+  <summary xml:lang="ru">Онлайн/оффлайн читалка манги для GNOME</summary>
+  <summary xml:lang="pt_BR">Um leitor de mangá online/offline para GNOME</summary>
+  <summary xml:lang="nl">Een online-/offline-mangalezer voor GNOME</summary>
+  <summary xml:lang="fr">Un lecteur de manga en ligne / hors ligne pour GNOME</summary>
+  <description>
+    <p>An online/offline manga reader for GNOME developed with the aim of being used with the Librem 5 phone</p>
+    <p xml:lang="ru">Онлайн/оффлайн читалка манги для GNOME разработанная с целью использования на телефонах Librem 5</p>
+    <p xml:lang="pt_BR">Um leitor de mangá online/offline para GNOME desenvolvido com o objetivo de ser usado com o telefone Librem 5</p>
+    <p xml:lang="nl">Een online-/offline-mangalezer voor GNOME, ontwikkeld met als doel de toepassing te gebruiken op de Librem 5-smartphone</p>
+    <p xml:lang="fr">Un lecteur de manga en ligne / hors ligne pour GNOME développé dans le but d'être utilisé avec le Librem 5</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://gitlab.com/valos/Komikku/raw/master/screenshots/main-window.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://gitlab.com/valos/Komikku/raw/master/screenshots/add-servers.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://gitlab.com/valos/Komikku/raw/master/screenshots/preferences.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://gitlab.com/valos/Komikku/raw/master/screenshots/card-info.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://gitlab.com/valos/Komikku/raw/master/screenshots/card-chapters.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://gitlab.com/valos/Komikku/raw/master/screenshots/reader.png</image>
+    </screenshot>
+  </screenshots>
+  <developer_name>Valéry Febvre</developer_name>
+  <update_contact>vfebvre@easter-eggs.com</update_contact>
+  <url type="homepage">https://gitlab.com/valos/Komikku</url>
+  <url type="bugtracker">https://gitlab.com/valos/Komikku/issues</url>
+  <launchable type="desktop-id">info.febvre.Komikku.desktop</launchable>
+  <releases>
+    <release version="0.17.0" date="2020-05-29">
+      <description>
+        <ul>
+          <li>[Preferences] New UI</li>
+          <li>[Servers] MangaNelo: Fix images loading</li>
+          <li>[Servers] Disable Jaimini's Box</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.16.1" date="2020-05-24">
+      <description>
+        <p>Fix 2 critical bugs (app crashs)</p>
+      </description>
+    </release>
+    <release version="0.16.0" date="2020-05-24">
+      <description>
+        <ul>
+          <li>[Library/Readers] Add support of animated GIFs</li>
+          <li>[Library] Add &lt;Control&gt;+F shortcut: Enter search mode</li>
+          <li>[Library/Manga/Download Manager] Add &lt;Control&gt;+A shortcut: Select all</li>
+          <li>[Library/Manga/Download Manger] Add &lt;Control&gt;+Click and &lt;Shift&gt;+Click shortcuts: Enter selection mode</li>
+          <li>[Download Manager] Add range selection: long press on an item then long press on another to select everything in between</li>
+          <li>[Manga] Add chapters scanlators support (MangaDex only)</li>
+          <li>[Servers] Add Izneo (DE, EN and FR) and Yieha (NL): a account is required</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.15.1" date="2020-05-07">
+      <description>
+        <ul>
+          <li>[Library] Faster chapters list rendering</li>
+          <li>[Library] Faster read/unread state toggling with long chapters selections</li>
+          <li>[Library] Reduce memory used by covers</li>
+          <li>[Servers] MangaSee: Fix manga with chapters grouped by seasons</li>
+          <li>[Servers] Jaimini's Box: Several fixes</li>
+          <li>[Servers] MangaLib: Several fixes</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.15.0" date="2020-04-21">
+      <description>
+        <ul>
+          <li>[Library] Add search by genre (exact match)</li>
+          <li>[Library/Chapters] Add range selection: long press on an item then long press on another to select everything in between</li>
+          <li>[Chapters] Fully cached/read chapters are now marked as "Downloaded"</li>
+          <li>[Reader] Improve keyboard navigation</li>
+          <li>[Reader] Improve pages transition</li>
+          <li>[Servers] Add Crunchyroll (EN): a Premium account is required</li>
+          <li>[Servers] Scantrad France: Add Most populars</li>
+          <li>Improve manga update</li>
+          <li>New icon</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.14.0" date="2020-04-01">
+      <description>
+        <ul>
+          <li>[Reader] Add 'Original Size' scaling</li>
+          <li>[Reader] Several fixes in keyboard navigation</li>
+          <li>[Settings] Library: Add new option 'Auto Download of New Chapters'</li>
+          <li>[Settings] Library: Add new option 'Long Strip Detection' (MangaDex, MangaNelo, Mangakawaii, JapScan and Union Mangás)</li>
+          <li>[Servers] JapScan: Fix search and images loading</li>
+          <li>[Servers] MangaLib: Fix images loading</li>
+          <li>[Servers] Submanga: Update of domain</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.13.0" date="2020-03-12">
+      <description>
+        <p>[Reader] Fix crash with corrupt or empty images</p>
+        <p>[Settings] Add servers settings</p>
+        <p>[Servers] Add Union Mangás (PT)</p>
+        <p>[Servers] Add MangaLib and HentaiLib (RU)</p>
+        <p>[Servers] Add Edelgarde Scans, Hunlight Scans, One Shot Scans, Reaper Scans, The Nonames Scans, Zero Scans (EN)</p>
+        <p>[Servers] Add Leviatan Scans (EN, ES)</p>
+        <p>[Servers] Hatigarm Scans: new server version</p>
+        <p>[Servers] Scantrad France: Fix</p>
+        <p>[Servers] MangaDex: Added ability to log in</p>
+        <p>[Servers] Read Manga: Fixes</p>
+        <p>Improved manga update</p>
+      </description>
+    </release>
+    <release version="0.12.1" date="2020-02-29">
+      <description>
+        <p>[Servers] Mangakawaii: Fixed manga cover</p>
+        <p>Improved manga update</p>
+      </description>
+    </release>
+    <release version="0.12.0" date="2020-02-26">
+      <description>
+        <p>[Manga] Fixed the unread action of chapters</p>
+        <p>[Reader] Cursor hiding during keyboard navigation</p>
+        <p>[Reader] Arrow scrolling in every reading directions</p>
+        <p>[Reader] Added white borders crop</p>
+        <p>[Servers] Added Kirei Cake (EN)</p>
+        <p>[Servers] Added Read Manga, Mint Manga and Self Manga (RU)</p>
+        <p>[Servers] Updated Mangakawaii domain</p>
+        <p>[Servers] Fixed JapScan search (using DuckDuckGo Lite)</p>
+        <p>Added back navigation with Escape key</p>
+        <p>Added abilility to add manga by ID using keyword "id:&lt;id&gt;" (useful with MangaDex)</p>
+        <p>Various bugs fixes</p>
+      </description>
+    </release>
+    <release version="0.11.1" date="2020-02-14">
+      <description>
+        <p>Added the Dutch translation</p>
+      </description>
+    </release>
+    <release version="0.11.0" date="2020-02-11">
+      <description>
+        <p>Added Desu server (RU)</p>
+        <p>Added the Russian translation</p>
+        <p>Updated the Brazilian Portuguese translation</p>
+        <p>Fixed a bug in manga updater</p>
+      </description>
+    </release>
+    <release version="0.10.1" date="2020-02-06">
+      <description>
+        <p>Fixe a bug in Download Manager</p>
+      </description>
+    </release>
+    <release version="0.10.0" date="2020-02-05">
+      <description>
+        <p>Added a Download Manager</p>
+        <p>[Manga] Improved chapters download</p>
+        <p>[Reader] Vertical reading direction: Added scrolling with UP and DOWN keys</p>
+        <p>[Reader] Added a Retry button when a image load failed</p>
+        <p>[Servers] Removed Manga Rock (server has closed)</p>
+        <p>[Servers] Minor fix in xkcd</p>
+        <p>[Servers] MangaDex: Added 15 languages</p>
+      </description>
+    </release>
+    <release version="0.9.0" date="2020-01-17">
+      <description>
+        <p>[Library] Add an unread badge</p>
+        <p>[Library/Manga] Added "Select All" in selection mode</p>
+        <p>[Library/Manga] Now leaves selection mode when no mangas/chapters are selected</p>
+        <p>[Manga] Improved chapters list rendering</p>
+        <p>[Manga] Improved chapters download: add a progress bar and a "Stop" button</p>
+        <p>[Settings] General: New option to disable desktop notifications</p>
+        <p>[Servers] Minor fixes in xkcd</p>
+        <p>[Servers] Add MangaDex (EN, ES, FR)</p>
+      </description>
+    </release>
+    <release version="0.8.1" date="2020-01-09">
+      <description>
+        <p>Jaimini's Box server: Fixed mangas with an adult alert</p>
+      </description>
+    </release>
+    <release version="0.8.0" date="2020-01-09">
+      <description>
+        <p>Added MANGA Plus server (EN, ES)</p>
+        <p>Added Jaimini's Box</p>
+      </description>
+    </release>
+    <release version="0.7.2" date="2020-01-03">
+      <description>
+        <p>Fixed 'Night Light' preference</p>
+        <p>Fixed JapScan server search</p>
+      </description>
+    </release>
+    <release version="0.7.1" date="2019-12-31">
+      <description>
+        <p>Pager focus is now correctly restored when menu is closed (useful for keypad navigation).</p>
+        <p>Happy new year to everyone.</p>
+      </description>
+    </release>
+    <release version="0.7.0" date="2019-12-30">
+      <description>
+        <p>Added 'Vertical' reading direction</p>
+        <p>Added 'Night Light' preference</p>
+      </description>
+    </release>
+    <release version="0.6.2" date="2019-12-22">
+      <description>
+        <p>Fixed Manganelo and WEBTOON servers</p>
+      </description>
+    </release>
+    <release version="0.6.1" date="2019-12-18">
+      <description>
+        <p>Ninemanga: Fixed missing chapters issue (EN, BR, DE, ES, IT)</p>
+        <p>Pepper&amp;Carrot: Fixed chapters update</p>
+        <p>Pepper&amp;Carrot: Added missing Cover and Credits pages</p>
+      </description>
+    </release>
+    <release version="0.6.0" date="2019-12-17">
+      <description>
+        <p>New preference: Servers languages</p>
+        <p>Bug fixes in Scantrad France and DB Multiverse</p>
+      </description>
+    </release>
+    <release version="0.5.1" date="2019-12-11">
+      <description>
+        <p>A bug fix in change of reading direction</p>
+        <p>A bug fix in Pepper&amp;Carrot</p>
+      </description>
+    </release>
+    <release version="0.5.0" date="2019-12-11">
+      <description>
+        <p>Added Pepper&amp;Carrot server</p>
+        <p>A free(libre) and open-source webcomic supported directly by its patrons to change the comic book industry!</p>
+      </description>
+    </release>
+    <release version="0.4.0" date="2019-12-08">
+      <description>
+        <p>New preference: Automatically update library at startup</p>
+        <p>Fix in Mangakawaii server (Cloudflare problem)</p>
+      </description>
+    </release>
+    <release version="0.3.1" date="2019-11-29">
+      <description>
+        <p>Fixes in Mangakawaii server</p>
+      </description>
+    </release>
+    <release version="0.3.0" date="2019-11-28">
+      <description>
+        <p>Added Dragon Ball Multiverse (DBM) server</p>
+        <p>Fixes in Japscan server (search still broken)</p>
+      </description>
+    </release>
+    <release version="0.2.0" date="2019-11-23">
+      <description>
+        <p>New servers: NineManga Russian, Webtoon Indonesia and Webtoon Thai</p>
+        <p>For all servers that allow it, most popular mangas are now offered as starting search results.</p>
+      </description>
+    </release>
+    <release version="0.1.5" date="2019-11-20">
+      <description>
+        <p>Improve speed of dates parsing</p>
+        <p>Fixed order of manga chapters for Scantrad France and Central de Mangás</p>
+      </description>
+    </release>
+    <release version="0.1.4" date="2019-11-19">
+      <description>
+        <p>Fix keyboard navigation in reader</p>
+      </description>
+    </release>
+    <release version="0.1.3" date="2019-11-18">
+      <description>
+        <p>Add a new server: xkcd (English)</p>
+      </description>
+    </release>
+    <release version="0.1.2" date="2019-11-14">
+      <description>
+        <p>Add the Portuguese (Brazil) translation</p>
+        <p>Add a new server: Central de Mangas (Portuguese)</p>
+      </description>
+    </release>
+    <release version="0.1.1" date="2019-11-12">
+      <description>
+        <p>Bug fix: Change the location of the data storage</p>
+      </description>
+    </release>
+    <release version="0.1.0" date="2019-11-10">
+      <description>
+        <p>First release</p>
+      </description>
+    </release>
+  </releases>
+</component>
