@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkAboutDialog" id="about_dialog">
+    <property name="can_focus">False</property>
+    <property name="type_hint">dialog</property>
+    <property name="program_name">Komikku</property>
+    <property name="version">0.17.0</property>
+    <property name="copyright">© 2019-2020 Valéry Febvre</property>
+    <property name="comments" translatable="yes">An online/offline manga reader.
+
+Never forget, you can support the authors
+by buying the official comics when they are
+available in your region/language.</property>
+    <property name="website">https://gitlab.com/valos/Komikku</property>
+    <property name="website_label" translatable="yes">Learn more about Komikku</property>
+    <property name="authors"></property>
+    <property name="translator_credits"></property>
+    <!-- <property name="artists"></property> -->
+    <property name="logo_icon_name">info.febvre.Komikku</property>
+    <property name="license_type">gpl-3-0</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="can_focus">False</property>
+            <property name="layout_style">end</property>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

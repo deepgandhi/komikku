@@ -1,0 +1,2 @@
+/home/cadeepgandhi/komikku/_build/meson-private/cmake_gtk+-3.0/CMakeFiles/rebuild_cache.dir
+/home/cadeepgandhi/komikku/_build/meson-private/cmake_gtk+-3.0/CMakeFiles/edit_cache.dir

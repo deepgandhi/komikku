@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <enum id="info.febvre.Komikku.BackgroundColor">
+        <value nick="white" value="0" />
+        <value nick="black" value="1" />
+    </enum>
+    <enum id="info.febvre.Komikku.ReadingDirection">
+        <value nick="right-to-left" value="0" />
+        <value nick="left-to-right" value="1" />
+        <value nick="vertical" value="2" />
+    </enum>
+    <enum id="info.febvre.Komikku.Scaling">
+        <value nick="screen" value="0" />
+        <value nick="width" value="1" />
+        <value nick="height" value="2" />
+        <value nick="original" value="3" />
+    </enum>
+    <schema path="/info/febvre/Komikku/" id="info.febvre.Komikku" gettext-domain="komikku">
+        <key type="b" name="downloader-state">
+            <default>true</default>
+            <summary>Downloader State</summary>
+            <description>State of the downloader: ON (true) or OFF (false).</description>
+        </key>
+
+        <key type="b" name="dark-theme">
+            <default>false</default>
+            <summary>Dark Theme</summary>
+            <description>Use the dark variant of your GTK theme. Please note that not every GTK theme has a dark variant.</description>
+        </key>
+        <key type="b" name="night-light">
+            <default>false</default>
+            <summary>Night Light</summary>
+            <description>Automatically enable dark GTK theme at night</description>
+        </key>
+        <key type="b" name="desktop-notifications">
+            <default>false</default>
+            <summary>Desktop Notifications</summary>
+            <description>Use desktop notifications for downloads</description>
+        </key>
+
+        <key type="b" name="update-at-startup">
+            <default>false</default>
+            <summary>Update at Startup</summary>
+            <description>Automatically update library at startup</description>
+        </key>
+        <key type="b" name="new-chapters-auto-download">
+            <default>false</default>
+            <summary>Auto Download of New Chapters</summary>
+            <description>Automatically download new chapters</description>
+        </key>
+        <key type="as" name="servers-languages">
+            <default>[]</default>
+            <summary>Servers Languages</summary>
+            <description>Allowed languages in servers list</description>
+        </key>
+        <key type="s" name="servers-settings">
+            <default>"{}"</default>
+            <summary>Servers Settings</summary>
+            <description>Enable/disable and configure servers</description>
+        </key>
+        <key type="b" name="long-strip-detection">
+            <default>false</default>
+            <summary>Long Strip Detection</summary>
+            <description>Automatically detect long vertical strip when possible (only on supported servers)</description>
+        </key>
+
+        <key enum="info.febvre.Komikku.BackgroundColor" name="background-color">
+            <default>"white"</default>
+            <summary>Background Color</summary>
+            <description>Background color of reader</description>
+        </key>
+        <key type="b" name="borders-crop">
+            <default>false</default>
+            <summary>Borders Crop</summary>
+            <description>Crop white borders of images</description>
+        </key>
+        <key enum="info.febvre.Komikku.ReadingDirection" name="reading-direction">
+            <default>"right-to-left"</default>
+            <summary>Reading Direction</summary>
+            <description>Reading direction in reader</description>
+        </key>
+        <key enum="info.febvre.Komikku.Scaling" name="scaling">
+            <default>"screen"</default>
+            <summary>Type of Scaling</summary>
+            <description>Image adjustment</description>
+        </key>
+        <key type="b" name="fullscreen">
+            <default>false</default>
+            <summary>Fullscreen</summary>
+            <description>Automatically enter fullscreen mode in reader</description>
+        </key>
+
+        <key type="ai" name="window-size">
+            <default>[768, 600]</default>
+            <summary>Window Size</summary>
+            <description>Remember the window size.</description>
+        </key>
+    </schema>
+</schemalist>
