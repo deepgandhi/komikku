@@ -10,7 +10,8 @@ from gi.repository import Gtk
 from komikku.models import Settings
 from komikku.reader.controls import Controls
 from komikku.reader.pager import Pager
-
+import shutil
+import os
 
 class Reader:
     manga = None
@@ -66,7 +67,7 @@ class Reader:
     def add_actions(self):
         # Screenshot
         self.take_screenshot=Gio.SimpleAction.new('reader.take_screenshot',None)
-        self.take_screenshot.connect('activate',self.screenshot)
+        self.take_screenshot.connect('activate',self.screenshot_taken)
 
         # Reading direction
         self.reading_direction_action = Gio.SimpleAction.new_stateful(
@@ -91,6 +92,7 @@ class Reader:
         self.window.application.add_action(self.scaling_action)
         self.window.application.add_action(self.background_color_action)
         self.window.application.add_action(self.borders_crop_action)
+        self.window.application.add_action(self.take_screenshot)
 
     def init(self, manga, chapter):
         self.manga = manga
@@ -107,6 +109,7 @@ class Reader:
         self.show()
 
         self.pager.init(chapter)
+
 
     def on_background_color_changed(self, action, variant):
         value = variant.get_string()
@@ -210,6 +213,11 @@ class Reader:
         if chapter.manga.name in subtitle:
             subtitle = subtitle.replace(chapter.manga.name, '').strip()
         self.subtitle_label.set_text(subtitle)
+       
+    def screenshot_taken(self,action,param):
+        original=self.pager.current_page.path
+        destination=os.getenv("HOME")+"/Pictures/Komikku/"
+        if not os.path.exists(destination):
+            os.mkdir(destination)
+        shutil.copy(original,destination)
 
-    def screenshot(self):
-        print(self.pager.current_page)

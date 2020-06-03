@@ -2,12 +2,13 @@
 <interface>
     <!-- interface-requires gtk+ 3.0 -->
     <menu id="menu-reader">
-        <section>
-            <submenu>
+       <section>
+            <item>
                 <attribute name="label">Take screenshot</attribute>
-                <attribute name="target">app.reader.take_screenshot</attribute>                
-                <attribute name="target">take-screenshot</attribute>
-            </submenu>
+                <attribute name="action">app.reader.take_screenshot</attribute>                
+            </item>        
+        </section>
+        <section>
             <submenu>
                 <attribute name="label" translatable="yes">Reading direction</attribute>
                 <section>
