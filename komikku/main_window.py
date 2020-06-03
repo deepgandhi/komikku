@@ -69,6 +69,7 @@ class MainWindow(Gtk.ApplicationWindow):
         self.application.set_accels_for_action('app.select-all', ['<Control>a'])
         self.application.set_accels_for_action('app.preferences', ['<Control>p'])
         self.application.set_accels_for_action('app.shortcuts', ['<Control>question'])
+        self.reader.add_accelerators()
 
     def add_actions(self):
         about_action = Gio.SimpleAction.new('about', None)

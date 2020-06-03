@@ -64,6 +64,9 @@ class Reader:
     def size(self):
         return self.window.get_size()
 
+    def add_accelerators(self):
+        self.window.application.set_accels_for_action('app.reader.take_screenshot',['<Control>s'])
+
     def add_actions(self):
         # Screenshot
         self.take_screenshot=Gio.SimpleAction.new('reader.take_screenshot',None)

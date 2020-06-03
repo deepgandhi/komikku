@@ -88,6 +88,19 @@
             </child>
           </object>
         </child>
+        <child>
+          <object class="GtkShortcutsGroup">
+            <property name="visible">True</property>
+            <property name="title" context="Shortcut window description">Reader</property>
+              <child>
+                <object class="GtkShortcutsShortcut">
+                   <property name="visible">True</property>
+                   <property name="title" context="Shortcut window description">Save Page</property>
+                   <property name="accelerator">&lt;Primary&gt;S</property>
+                </object>
+              </child>
+          </object>
+        </child>
       </object>
     </child>
   </object>
