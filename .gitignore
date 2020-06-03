@@ -8,3 +8,5 @@ flatpak/*Devel*
 untracked
 .venv
 .vscode/
+_build
+

@@ -211,5 +211,5 @@ class Reader:
             subtitle = subtitle.replace(chapter.manga.name, '').strip()
         self.subtitle_label.set_text(subtitle)
 
-   def screenshot(self):
+    def screenshot(self):
         print(self.pager.current_page)

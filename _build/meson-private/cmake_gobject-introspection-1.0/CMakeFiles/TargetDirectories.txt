@@ -1,2 +1,0 @@
-/home/cadeepgandhi/komikku/_build/meson-private/cmake_gobject-introspection-1.0/CMakeFiles/rebuild_cache.dir
-/home/cadeepgandhi/komikku/_build/meson-private/cmake_gobject-introspection-1.0/CMakeFiles/edit_cache.dir
