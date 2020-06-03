@@ -12,6 +12,7 @@ from komikku.reader.controls import Controls
 from komikku.reader.pager import Pager
 import shutil
 import os
+import magic
 
 class Reader:
     manga = None
@@ -218,9 +219,14 @@ class Reader:
         self.subtitle_label.set_text(subtitle)
        
     def screenshot_taken(self,action,param):
+        page_name=str(self.pager.current_page.index+1)
+        chapter_name="chapter_"+str(self.pager.current_page.chapter.id)
+        manga_name=self.pager.current_page.chapter.manga.name
         original=self.pager.current_page.path
+        filetype=magic.from_file(original,mime=True).split("/")[-1]
+        filename="_".join([manga_name,chapter_name,page_name])
         destination=os.getenv("HOME")+"/Pictures/Komikku/"
         if not os.path.exists(destination):
             os.mkdir(destination)
-        shutil.copy(original,destination)
+        shutil.copy(original,destination+filename+"."+filetype)
 
