@@ -221,10 +221,9 @@ class Reader:
         self.subtitle_label.set_text(subtitle)
        
     def screenshot_taken(self,action,param):
-    	print(self.chapter.title)
-    	page=self.pager.current_page
+        page=self.pager.current_page
         page_name=str(page.index+1)
-        chapter_name="chapter_"+str(self.chapter.id)
+        chapter_name=self.chapter.title.replace(" ","_")
         manga_name=self.manga.name
         original=page.path
         filetype=magic.from_file(original,mime=True).split("/")[-1]
@@ -232,5 +231,6 @@ class Reader:
         destination=os.getenv("HOME")+"/Pictures/Komikku/"
         if not os.path.exists(destination):
             os.mkdir(destination)
-        shutil.copy(original,destination+filename+"."+filetype)
+        destinationfile=destination+filename+"."+filetype
+        shutil.copy(original,destinationfile)
 
