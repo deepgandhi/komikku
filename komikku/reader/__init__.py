@@ -17,6 +17,7 @@ import magic
 class Reader:
     manga = None
     chapters_consulted = None
+    chapter=None
 
     def __init__(self, window):
         self.window = window
@@ -100,6 +101,7 @@ class Reader:
 
     def init(self, manga, chapter):
         self.manga = manga
+        self.chapter=chapter
 
         # Reset list of chapters consulted
         self.chapters_consulted = set()
@@ -219,10 +221,12 @@ class Reader:
         self.subtitle_label.set_text(subtitle)
        
     def screenshot_taken(self,action,param):
-        page_name=str(self.pager.current_page.index+1)
-        chapter_name="chapter_"+str(self.pager.current_page.chapter.id)
-        manga_name=self.pager.current_page.chapter.manga.name
-        original=self.pager.current_page.path
+    	print(self.chapter.title)
+    	page=self.pager.current_page
+        page_name=str(page.index+1)
+        chapter_name="chapter_"+str(self.chapter.id)
+        manga_name=self.manga.name
+        original=page.path
         filetype=magic.from_file(original,mime=True).split("/")[-1]
         filename="_".join([manga_name,chapter_name,page_name])
         destination=os.getenv("HOME")+"/Pictures/Komikku/"
