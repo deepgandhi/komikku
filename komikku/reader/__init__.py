@@ -221,10 +221,15 @@ class Reader:
         self.subtitle_label.set_text(subtitle)
        
     def screenshot_taken(self,action,param):
+        #get current page
         page=self.pager.current_page
+
+        #get page number, chapter name and manga name
         page_name=str(page.index+1)
         chapter_name=self.chapter.title.replace(" ","_")
-        manga_name=self.manga.name
+        manga_name=self.manga.name.replace(" ","_")
+
+        #get original file path and copy to ~/Pictures/Komikku/
         original=page.path
         filetype=magic.from_file(original,mime=True).split("/")[-1]
         filename="_".join([manga_name,chapter_name,page_name])
